@@ -5,23 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Danish's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
       <div class="intro">
-        <img src="images/profile-picture.jpg" />
+        <img class="profile-picture" src="images/profile-picture.jpg" />
         <h1>Danish Faisal</h1>
-        <h3>UI Developer At WaveMaker</h3>
+        <h3>Software Developer</h3>
         <p class="quote">{{ Pause and ponder }}</p>
       </div>
+      <hr />
       <div class="about-grid">
         <div class="i-am">
           <h3>I am</h3>
           <ul class="about-list">
             <li>An engineer & a coder</li>
-            <li>A reader</li>
             <li>A movie buff</li>
+            <li>A reader</li>
           </ul>
         </div>
         <div class="i-like">
@@ -33,6 +38,7 @@
           </ul>
         </div>
       </div>
+      <hr />
       <div>
         <h3 class="projects-heading">My Projects</h3>
         <div class="projects-grid">
@@ -74,31 +80,41 @@
           </div>
         </div>
       </div>
+      <hr />
       <div class="links-and-contact">
         <div class="links">
           <h3>Links</h3>
           <ul class="links-list">
             <li>
-              <a href="https://github.com/danish-faisal">Github</a>
+              <a href="https://github.com/danish-faisal" target="_blank"
+                >Github</a
+              >
             </li>
             <li>
-              <a href="https://twitter.com/DanishFaisal_JS">Twitter</a>
+              <a href="https://linkedin.com/in/danish-faisal" target="_blank"
+                >Linkedin</a
+              >
             </li>
             <li>
-              <a href="https://linkedin.com/in/danish-faisal">Linkedin</a>
+              <a href="https://twitter.com/DanishFaisal_JS" target="_blank"
+                >Twitter</a
+              >
             </li>
           </ul>
         </div>
         <div>
           <form action="#">
             <label for="email">
-              Email:
+              <h4>Email:</h4>
               <input type="email" id="email" placeholder="Enter your email" />
             </label>
             <label for="message">
-              Message: <textarea id="message">Your Message</textarea>
+              <h4>Message:</h4>
+              <textarea id="message">Your Message</textarea>
             </label>
-            <input type="submit" valid="Send Message" />
+            <div class="submit-button-wrapper">
+              <input type="submit" valid="Send Message" />
+            </div>
           </form>
         </div>
       </div>

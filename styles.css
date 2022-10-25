@@ -1,6 +1,33 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #4ab9ed;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto Mono", monospace;
+}
+
 .container {
   max-width: 840px;
   margin: 0 auto;
+}
+
+.container > div {
+  margin: 20px auto;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 .profile-picture {
@@ -108,4 +135,32 @@
   .links-and-contact {
     grid-template-columns: 100%;
   }
+}
+
+form input,
+textarea {
+  padding: 5px;
+  border-radius: 5px;
+  width: 240px;
+}
+
+textarea {
+  border-width: 2px;
+}
+
+form {
+  width: 250px;
+  margin: 0 auto;
+}
+
+form input[type="submit"] {
+  width: 250px;
+}
+
+.submit-button-wrapper {
+  margin: 20px 0;
+}
+
+.submit-button-wrapper > button {
+  background-color: #ffffff;
 }
