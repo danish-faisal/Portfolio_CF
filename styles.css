@@ -120,7 +120,7 @@ hr {
 }
 .links-and-contact {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 30% 30% 40%;
 }
 
 .links {
@@ -137,30 +137,10 @@ hr {
   }
 }
 
-form input,
-textarea {
-  padding: 5px;
-  border-radius: 5px;
-  width: 240px;
+.links-and-contact a {
+  font-weight: bold;
 }
 
-textarea {
-  border-width: 2px;
-}
-
-form {
-  width: 250px;
-  margin: 0 auto;
-}
-
-form input[type="submit"] {
-  width: 250px;
-}
-
-.submit-button-wrapper {
-  margin: 20px 0;
-}
-
-.submit-button-wrapper > button {
-  background-color: #ffffff;
+.links-and-contact a:visited {
+  color: #0000ee;
 }
